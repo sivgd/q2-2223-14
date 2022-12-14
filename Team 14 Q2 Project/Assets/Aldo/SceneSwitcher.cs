@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuEvents : MonoBehaviour
+public class SceneSwitcher : MonoBehaviour
 {
-  public void LoadLevel(int index)
+   public void OpenScene(int index)
     {
         SceneManager.LoadScene(index);
     }
