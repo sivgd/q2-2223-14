@@ -6,7 +6,7 @@ public class ProjectileBehavior : MonoBehaviour
 
     private void Update()
     {
-        transform.position += -transform.right * Speed;
+        transform.position += transform.right * Speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
