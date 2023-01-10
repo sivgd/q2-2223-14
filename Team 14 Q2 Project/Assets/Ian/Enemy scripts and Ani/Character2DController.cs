@@ -5,7 +5,7 @@ public class Character2DController : MonoBehaviour
     public float MovementSpeed = 1;
     public float JumpForce = 1;
 
-    public ProjectileBehavior ProjectilePrefab;
+    public ProjectileBehaviorr ProjectilePrefab;
     public Transform LaunchOffset;
 
     private Rigidbody2D _rigidbody;
@@ -21,7 +21,7 @@ public class Character2DController : MonoBehaviour
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
         if (!Mathf.Approximately(0, movement))
-           transform.rotation = movement > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
+           transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {

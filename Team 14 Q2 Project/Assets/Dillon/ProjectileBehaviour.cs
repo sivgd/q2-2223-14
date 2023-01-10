@@ -14,7 +14,7 @@ public class ProjectileBehavior : MonoBehaviour
         var enemy = collision.collider.GetComponent<EnemyBehaviour>();
         if (enemy)
         {
-           enemy.TakeHit(1);
+            enemy.TakeHit(1);
         }
 
         Destroy(gameObject);
