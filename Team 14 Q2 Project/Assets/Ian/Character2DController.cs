@@ -21,7 +21,7 @@ public class Character2DController : MonoBehaviour
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
         if (!Mathf.Approximately(0, movement))
-           transform.rotation = movement > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
+           transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
@@ -30,7 +30,7 @@ public class Character2DController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+           Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
         }
     }
 }
