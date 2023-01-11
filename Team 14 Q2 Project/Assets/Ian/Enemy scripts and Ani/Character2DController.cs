@@ -5,7 +5,7 @@ public class Character2DController : MonoBehaviour
     public float MovementSpeed = 1;
     public float JumpForce = 1;
 
-    public ProjectileBehavior ProjectilePrefab;
+    public ProjectileBehaviorr ProjectilePrefab;
     public Transform LaunchOffset;
 
     private Rigidbody2D _rigidbody;
