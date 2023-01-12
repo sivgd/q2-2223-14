@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-     public float FollowSpeed = 2f;
-     public float yOffset =1f;
-     public Transform target;
+     public GameObject player;
+     private Vector3 offset;
 
-    // Update is called once per frame
-    void Update()
+     void Start()
+     {
+        offset = transform.position - player.transform.position;
+     }
+
+    void LateUpdate()
     {
-        Vector3 newPos = new Vector3(target.position.y + yOffset,-10f);
-        transform.position = Vector3.Slerp(transform.position,newPos,FollowSpeed*Time.deltaTime);
+        transform.position = player.transform.position + offset;
     }
 }
