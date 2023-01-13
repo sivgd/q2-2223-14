@@ -15,4 +15,5 @@ EditorBuildSettings:
     path: Assets/Aldo/Settings.unity
     guid: f5aeb3323a361df458807d9da069af9e
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 45420593a7e416d4fa3cc19746141aaf, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: e630bf229d202ff44a83f8c2c94d4281, type: 2}
