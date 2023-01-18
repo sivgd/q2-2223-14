@@ -19,6 +19,10 @@ public class PlayerHealth : MonoBehaviour
         health = maxhealth;
     }
 
+    void Update()
+    {
+      //healthBar.fillAmount = Mathf.Clamp(health / maxhealth, 0, 1);
+    }
     public void TakeDamage(int amount)
     {
         health -= amount;
@@ -26,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
         {
             isDead = true;
             Destroy(gameObject);
-            gameManager.gameOver();
+         // gameManager.gameOver();
         }
 
         healthBar.SetHealth(currentHealth);

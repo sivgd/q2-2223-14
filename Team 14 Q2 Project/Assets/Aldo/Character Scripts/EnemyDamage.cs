@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     public PlayerHealth playerHealth;
-    public int damage = 2;
+    public int damage = 20;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            playerHealth.TakeDamage(damage);
+            playerHealth.TakeDamage(20);
         }
     }
 }
