@@ -4727,7 +4727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 707079730}
-  damage: 20
+  damage: 0
 --- !u!1 &1680017910
 GameObject:
   m_ObjectHideFlags: 0
