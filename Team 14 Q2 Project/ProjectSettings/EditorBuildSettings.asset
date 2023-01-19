@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Aldo/Title Screen.unity
     guid: 5e973de53e62bf14e80e085b5e654ac5
   - enabled: 1
-    path: Assets/Aldo/GamePlaceholder.unity
-    guid: 2c98f37b916e2a14fbb4bfe06bf6d0e6
+    path: Assets/Dillon/GAMELEVEL/Scenes/MAIN SCENE.unity
+    guid: 6663d4e1652ac084cbcd474001aeb64a
   - enabled: 1
     path: Assets/Aldo/Settings.unity
     guid: f5aeb3323a361df458807d9da069af9e
