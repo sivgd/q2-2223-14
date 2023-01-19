@@ -17,7 +17,7 @@ public class Patrolbehaviour : MonoBehaviour
 
         if (groundCheck.collider == false)
         {
-            if (movingright)
+            if (movingRight) 
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 movingRight = false;
