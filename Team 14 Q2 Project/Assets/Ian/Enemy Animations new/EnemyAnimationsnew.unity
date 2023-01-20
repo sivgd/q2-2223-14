@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  ratDist: 2
+  rayDist: 5
   groundDetect: {fileID: 1515411134}
 --- !u!1 &1515411133
 GameObject:
