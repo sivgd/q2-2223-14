@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class CircleHealth : MonoBehaviour
 {
     public int health;
     public int maxhealth = 100;
@@ -18,22 +18,22 @@ public class PlayerHealth : MonoBehaviour
     {
         health = maxhealth;
         hBar.SetMaxHealth(maxhealth);
-        hBar.SetHealth(health);
-       
+        //hBar.SetHealth(health);
+
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
-        if(health <= 0 && !isDead)
+        if (health <= 0 && !isDead)
         {
             isDead = true;
             Destroy(gameObject);
-         // gameManager.gameOver();
+            // gameManager.gameOver();
         }
 
-        hBar.SetHealth(health);
-        
+        //hBar.SetHealth(currentHealth);
+
 
     }
 }
