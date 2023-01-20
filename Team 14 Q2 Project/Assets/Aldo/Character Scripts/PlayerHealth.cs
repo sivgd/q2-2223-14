@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public int maxhealth = 100;
     public int currentHealth;
-    public HealthBar healthBar;
+    public HealthBar hBar;
 
     private bool isDead;
 
@@ -17,6 +17,9 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         health = maxhealth;
+        hBar.SetMaxHealth(maxhealth);
+        hBar.SetHealth(health);
+       
     }
 
     public void TakeDamage(int amount)
@@ -29,7 +32,8 @@ public class PlayerHealth : MonoBehaviour
          // gameManager.gameOver();
         }
 
-        healthBar.SetHealth(currentHealth);
+        hBar.SetHealth(currentHealth);
+        
 
     }
 }
