@@ -4499,6 +4499,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2556263343298201147, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556263343298201147, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2556263343483706150, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
       propertyPath: m_Name
       value: Died
@@ -4637,11 +4645,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2556263344129593876, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -155
+      value: -140
       objectReference: {fileID: 0}
     - target: {fileID: 2556263344129593876, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 2556263344129593877, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
       propertyPath: m_SortingOrder
@@ -7607,7 +7615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1104211483}
   m_Layer: 0
-  m_Name: GameOverMenu
+  m_Name: gameOverMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15310,6 +15318,7 @@ GameObject:
   - component: {fileID: 2007313188}
   - component: {fileID: 2007313190}
   - component: {fileID: 2007313189}
+  - component: {fileID: 2007313191}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15454,6 +15463,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 0}
   player: {fileID: 0}
+--- !u!114 &2007313191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007313183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bed5b54719ed4468d17feab8ce5fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverMenu: {fileID: 1104211482}
 --- !u!1 &2019628108
 GameObject:
   m_ObjectHideFlags: 0
