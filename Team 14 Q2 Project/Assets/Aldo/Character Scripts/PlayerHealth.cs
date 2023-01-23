@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class PlayerHealth : MonoBehaviour
 {
+
     public int health;
     public int maxhealth = 100;
     public int currentHealth;
     public HealthBar hBar;
+    public static event Action OnPlayerDeath;
 
     private bool isDead;
 
@@ -29,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
         {
             isDead = true;
             Destroy(gameObject);
+            OnPlayerDeath?.Invoke();
          // gameManager.gameOver();
         }
 
