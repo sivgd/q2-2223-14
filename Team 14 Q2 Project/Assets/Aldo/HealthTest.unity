@@ -843,6 +843,7 @@ GameObject:
   - component: {fileID: 1599545289}
   - component: {fileID: 1599545288}
   - component: {fileID: 1599545291}
+  - component: {fileID: 1599545292}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -948,6 +949,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1599545292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599545287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bed5b54719ed4468d17feab8ce5fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverMenu: {fileID: 2100952037}
 --- !u!1 &1609273669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1101,11 @@ Transform:
   m_Father: {fileID: 710595475}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2100952037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2556263343483706150, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
+  m_PrefabInstance: {fileID: 2556263344436978411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2556263344436978411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1104,7 +1123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2556263343483706150, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
       propertyPath: m_Name
-      value: GaneOver
+      value: gameOverMenu
       objectReference: {fileID: 0}
     - target: {fileID: 2556263343483706150, guid: 5925c62d3cc72304c8609f09fb6327be, type: 3}
       propertyPath: m_IsActive
