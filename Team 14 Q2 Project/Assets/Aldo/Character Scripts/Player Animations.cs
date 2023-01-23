@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
 {
+    private readonly string Throw;
     public Animator anim;
     public KeyCode W;
     void Start()
