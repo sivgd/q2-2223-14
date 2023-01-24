@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CreditRoller : MonoBehaviour
 {
-    private static int nscreen = 3;
+    private static int nscreen = 4;
     private GameObject[] creditScenes = new GameObject[nscreen];
     private static int swapCount;
 
@@ -15,7 +15,8 @@ public class CreditRoller : MonoBehaviour
         creditScenes[0] = GameObject.Find("Credit1");
         creditScenes[1] = GameObject.Find("Credit2");
         creditScenes[2] = GameObject.Find("Credit3");
-        //creditScenes[3] = GameObject.Find("Credit4");
+        creditScenes[3] = GameObject.Find("Credit4");
+        //creditScenes[4] = GameObject.Find("Credit5");
 
         //Turn all scenes off
         for (int i = 0; i < nscreen; i++)
