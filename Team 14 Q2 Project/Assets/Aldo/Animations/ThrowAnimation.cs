@@ -16,7 +16,7 @@ public class ThrowAnimation : MonoBehaviour
     {
         if (Input.GetKeyDown("w"))
         {
-            animator.SetTrigger
+            //animator.SetTrigger
         } 
     }
 }
