@@ -29,7 +29,7 @@ public class EnemyDamage : MonoBehaviour
             //playerHealth.TakeDamage(damage);
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
             Debug.Log("ouch");
-            player.Components.Animator.TryPlayAnimation("TakeDamage");
+          //  player.Components.Animator.TryPlayAnimation("TakeDamage");
         }
     }
 }

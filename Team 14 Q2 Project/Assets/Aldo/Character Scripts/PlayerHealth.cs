@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
             isDead = true;
             Destroy(gameObject);
             OnPlayerDeath?.Invoke();
-         // gameManager.gameOver();
+            gameManager.gameOver();
         }
 
         hBar.SetHealth(health);
