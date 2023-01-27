@@ -8863,7 +8863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  rayDist: 2
+  rayDist: 0
   groundDetect: {fileID: 772834347}
 --- !u!95 &1128725182
 Animator:
@@ -9032,7 +9032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128725180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.647, y: 3.67, z: 0}
+  m_LocalPosition: {x: 42.85, y: 3.36, z: 0}
   m_LocalScale: {x: 0.5113828, y: 0.42303684, z: 12}
   m_Children:
   - {fileID: 772834347}
@@ -9052,9 +9052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f8bbf0159b69449b740d18185b5f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 383788896}
   damage: 20
-  player: {fileID: 0}
+  player: {fileID: 383788889}
 --- !u!1 &1131814517
 GameObject:
   m_ObjectHideFlags: 0
@@ -13286,7 +13286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 0}
   damage: 20
-  player: {fileID: 383788889}
+  player: {fileID: 0}
 --- !u!1 &1579079897
 GameObject:
   m_ObjectHideFlags: 0
