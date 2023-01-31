@@ -12,6 +12,7 @@ public class BasicMovement : MonoBehaviour
 
     public ProjectileBehaviorr ProjectilePrefab;
     public Transform LaunchOffset;
+    private bool fire;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class BasicMovement : MonoBehaviour
 
         a.SetFloat("yVelocity", rb2.velocity.y);
         a.SetBool("Grounded", grounded);
+        a.SetBool("Throw", fire);
 
         float horizvlaue = Input.GetAxis("Horizontal");
 
@@ -54,7 +56,8 @@ public class BasicMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            fire = Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            
         }
     }
 }
