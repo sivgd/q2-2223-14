@@ -5,13 +5,14 @@ using UnityEngine;
 public class BasicMovement : MonoBehaviour
 {
     public bool grounded = false;
-
+    public float MovementSpeed = 7;
     Rigidbody2D rb2;
     SpriteRenderer sr;
     Animator a;
 
     public ProjectileBehaviorr ProjectilePrefab;
     public Transform LaunchOffset;
+    private bool fire;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class BasicMovement : MonoBehaviour
 
         a.SetFloat("yVelocity", rb2.velocity.y);
         a.SetBool("Grounded", grounded);
+        a.SetBool("Throw", fire);
 
         float horizvlaue = Input.GetAxis("Horizontal");
 
@@ -41,16 +43,11 @@ public class BasicMovement : MonoBehaviour
             a.SetBool("Moving", true);
         }
 
-        rb2.velocity = new Vector2(horizvlaue * 5, rb2.velocity.y);
+        var movement = Input.GetAxis("Horizontal");
+        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
-        if (horizvlaue < 0)
-        {
-            sr.flipX = true;
-        }
-        else
-        {
-            sr.flipX = false;
-        }
+        if (!Mathf.Approximately(0, movement))
+            transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
 
         if (grounded && Input.GetKeyDown(KeyCode.Space))
         {
@@ -59,7 +56,8 @@ public class BasicMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            fire = Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            
         }
     }
 }
