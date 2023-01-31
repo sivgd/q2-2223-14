@@ -57,7 +57,7 @@ public class BasicMovement : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             fire = Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
-            
         }
+
     }
 }
