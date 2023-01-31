@@ -2616,6 +2616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
+  MovementSpeed: 6
   ProjectilePrefab: {fileID: 4048589419299940764, guid: 841ef1e1eae13054784f7783943766ad, type: 3}
   LaunchOffset: {fileID: 1280974410}
 --- !u!1 &386323196
