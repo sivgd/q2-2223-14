@@ -86,10 +86,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 4665827538504685000}
-    m_Position: {x: 490, y: 170, z: 0}
+    m_Position: {x: 390, y: 160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1052104878201084323}
-    m_Position: {x: 320, y: 350, z: 0}
+    m_Position: {x: 210, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4400713680631105416}
     m_Position: {x: 390, y: 0, z: 0}
@@ -98,7 +98,7 @@ AnimatorStateMachine:
     m_Position: {x: -50, y: 270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4053867073819168190}
-    m_Position: {x: 310, y: 510, z: 0}
+    m_Position: {x: 390, y: 480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1631272627979700476}
     m_Position: {x: 160, y: 160, z: 0}
@@ -265,31 +265,31 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: yVelocity
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: TakeDamage
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Throw
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
