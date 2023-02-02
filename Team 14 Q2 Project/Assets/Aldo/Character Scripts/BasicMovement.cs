@@ -13,6 +13,8 @@ public class BasicMovement : MonoBehaviour
     public ProjectileBehaviorr ProjectilePrefab;
     public Transform LaunchOffset;
     private bool fire;
+    public float Sprinting = 1.0f;
+    private bool sprint;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class BasicMovement : MonoBehaviour
         a.SetFloat("yVelocity", rb2.velocity.y);
         a.SetBool("Grounded", grounded);
         a.SetBool("Throw", fire);
+        a.SetBool("Fast", sprint);
 
         float horizvlaue = Input.GetAxis("Horizontal");
 
@@ -45,6 +48,18 @@ public class BasicMovement : MonoBehaviour
 
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        
+        //sprinting
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            MovementSpeed += Sprinting;
+            sprint = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            MovementSpeed -= Sprinting;
+            sprint = false;
+        }
 
         if (!Mathf.Approximately(0, movement))
             transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
@@ -53,7 +68,7 @@ public class BasicMovement : MonoBehaviour
         {
             rb2.velocity = new Vector2(rb2.velocity.x, 6);
         }
-
+        //throwing
         if (Input.GetButtonDown("Fire1"))
         {
             fire = Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
