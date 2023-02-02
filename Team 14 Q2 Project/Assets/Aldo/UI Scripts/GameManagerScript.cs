@@ -7,8 +7,12 @@ public class GameManagerScript : MonoBehaviour
 {
     public GameObject gameOverUI;
     public GameObject player;
-       
-   
+
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
 
     public void gameOver()
     {
