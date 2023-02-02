@@ -51,6 +51,10 @@ public class PlayerHealth : MonoBehaviour
             gameManager.gameOver();
             Time.timeScale = 0f;
         }
+        else
+        {
+            Time.timeScale = 1f;
+        }
 
         hBar.SetHealth(health);
     }

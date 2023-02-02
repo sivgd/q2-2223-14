@@ -17,7 +17,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("MAIN SCENE");
     }
 
     public void mainMenu()
