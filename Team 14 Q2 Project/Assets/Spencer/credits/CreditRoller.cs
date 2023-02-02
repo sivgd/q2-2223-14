@@ -12,14 +12,14 @@ public class CreditRoller : MonoBehaviour
     void Start()
     {
         //For each credit scene, add a reference here:
-        creditScenes[0] = GameObject.Find("Credit1");
-        creditScenes[1] = GameObject.Find("Credit2");
-        creditScenes[2] = GameObject.Find("Credit3");
-        creditScenes[3] = GameObject.Find("Credit4");
-        creditScenes[4] = GameObject.Find("Credit5");
-        creditScenes[5] = GameObject.Find("Credit6");
-        creditScenes[6] = GameObject.Find("Credit7");
-        creditScenes[7] = GameObject.Find("Credit8");
+        creditScenes[0] = GameObject.Find("Ehron");
+        creditScenes[1] = GameObject.Find("Sydney");
+        creditScenes[2] = GameObject.Find("Cassie");
+        creditScenes[3] = GameObject.Find("Isabella");
+        creditScenes[4] = GameObject.Find("Aldo");
+        creditScenes[5] = GameObject.Find("Spencer");
+        creditScenes[6] = GameObject.Find("Ian");
+        creditScenes[7] = GameObject.Find("Dillon");
         //creditScenes[8] = GameObject.Find("Credit9");
         //creditScenes[9] = GameObject.Find("Credit10");
 
@@ -35,7 +35,7 @@ public class CreditRoller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.anyKeyDown)
         {
 
            // if (creditScenes[8])

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
+
+    public BasicMovement basicMovement;
     public PlayerHealth playerHealth;
     public int damage = 20;
     public GameObject player;
@@ -29,7 +31,7 @@ public class EnemyDamage : MonoBehaviour
             //playerHealth.TakeDamage(damage);
             player.GetComponent<PlayerHealth>().TakeDamage(damage);
             Debug.Log("ouch");
-          //  player.Components.Animator.TryPlayAnimation("TakeDamage");
+            
         }
     }
 }

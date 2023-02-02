@@ -16,6 +16,7 @@ public class BasicMovement : MonoBehaviour
     public float Sprinting = 1.0f;
     private bool sprint;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,7 @@ public class BasicMovement : MonoBehaviour
         a.SetBool("Grounded", grounded);
         a.SetBool("Throw", fire);
         a.SetBool("Fast", sprint);
+       
 
         float horizvlaue = Input.GetAxis("Horizontal");
 
@@ -71,7 +73,14 @@ public class BasicMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            fire = Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+           Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            fire = true;
+        }
+        else
+
+        if (Input.GetButtonUp("Fire1"))
+        {
+            fire = false;
         }
 
     }
